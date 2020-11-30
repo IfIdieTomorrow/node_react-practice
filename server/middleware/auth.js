@@ -1,5 +1,7 @@
 const {User} = require("../model/User");
 
+// 로그인할 때 생성된 쿠키(x_auth)에 담긴 토큰을 가져와서,
+// 토큰으로 사용자를 확인
 let auth = (request ,response, next) =>{
     
     // 인증 처리를 하는곳
